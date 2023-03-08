@@ -1,5 +1,7 @@
 nav {
   background-color: $navbar-bg;
+  position: fixed;
+  width: 100%;
 }
 .nav {
   @include flexfunction(row, center, space-between, wrap);
@@ -48,6 +50,7 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .nav {
+   
     @include flexfunction(row, start, space-between, wrap);
     &__list {
       @include flexfunction(column, center, center, wrap);
@@ -74,6 +77,7 @@ nav {
       height: 100vh;
     }
   }
+ 
 }
 @media screen and (max-width: 576px) {
   .nav {

@@ -22,6 +22,8 @@ img {
 }
 nav {
   background-color: #232536;
+  position: fixed;
+  width: 100%;
 }
 
 .nav {
