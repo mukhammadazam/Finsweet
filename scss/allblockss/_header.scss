@@ -2,7 +2,7 @@ nav {
   background-color: $navbar-bg;
   position: fixed;
   width: 100%;
-  z-index: 1111111111111;
+  z-index: 1111111;
 }
 .nav {
   @include flexfunction(row, center, space-between, wrap);
@@ -56,6 +56,7 @@ nav {
     &__list {
       @include flexfunction(column, center, center, wrap);
       display: none;
+      padding-right: 59px;
       padding-top: 150px;
       &--item {
         padding-bottom: 48px;

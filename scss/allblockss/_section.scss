@@ -1,6 +1,6 @@
 .hero-site {
-   padding-top: 128px;
-   padding-bottom: 196px;
+  padding-top: 128px;
+  padding-bottom: 196px;
   @include BG(url(../../imgrs/hero__beground.png), no-repeat, 100%, center);
 }
 .hero {
@@ -29,31 +29,110 @@
     font-size: 16px;
     line-height: 28px;
     color: $white-color;
-    
   }
-  .text__leni{
+  .text__leni {
     color: $btn-color;
   }
-  &__text{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-color: #FFFFFF;
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
   }
-  &__btn{
-    font-family: 'Sen';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-padding: 16px 48px;
-border: none;
-background-color: $btn-color;
-color: $btn-text-color;
+  &__btn {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 48px;
+    border: none;
+    background-color: $btn-color;
+    color: $btn-text-color;
   }
 }
-@media screen and (max-width:992px){
+@media screen and (max-width: 992px) {
+  .hero-site {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  .hero {
+    padding-top: 50px;
+    &__leni {
+      font-size: 14px;
+    }
+    &__title {
+      max-width: 500px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &__text1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $white-color;
+    }
+    .text__leni {
+      color: $btn-color;
+    }
+    &__text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 10px 40px;
     
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-site {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .hero {
+    padding-top: 50px;
+    &__leni {
+      font-size: 14px;
+    }
+    &__title {
+      max-width: 500px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &__text1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $white-color;
+    }
+    .text__leni {
+      color: $btn-color;
+    }
+    &__text {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 10px 40px;
+    
+    }
+  }
 }
