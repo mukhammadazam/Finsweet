@@ -25,13 +25,13 @@ nav {
 }
 
 .nav {
-  padding-top: 30px;
-  padding-bottom: 11px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 26px;
 }
 .nav__list {
   padding-right: 83px;
@@ -48,6 +48,11 @@ nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: #fff;
+  opacity: 0.7;
+}
+.nav__list .link {
+  padding-left: 59px;
 }
 .nav__list .login {
   background-color: #fff;
@@ -57,4 +62,48 @@ nav {
   font-size: 18px;
   line-height: 24px;
   color: #232536;
+}
+.nav__burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
