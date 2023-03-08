@@ -1,1 +1,9 @@
-/*# sourceMappingURL=main.css.map */
+.list li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #911e1e;
+  opacity: 0.1;
+}/*# sourceMappingURL=main.css.map */
