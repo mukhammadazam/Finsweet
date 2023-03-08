@@ -12,6 +12,7 @@
     line-height: 20px;
     color: $white-color;
     padding-bottom: 24px;
+    text-transform: uppercase;
   }
   &__title {
     max-width: 900px;
@@ -91,7 +92,6 @@
     &__btn {
       font-size: 16px;
       padding: 10px 40px;
-    
     }
   }
 }
@@ -119,83 +119,83 @@
     }
     &__text {
       font-size: 16px;
-
     }
     &__btn {
       font-size: 16px;
       padding: 10px 40px;
-    
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-site {
-      padding-top: 50px;
-      padding-bottom: 70px;
+  .hero-site {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .hero {
+    padding-top: 50px;
+    &__leni {
+      font-size: 14px;
     }
-    .hero {
-      padding-top: 50px;
-      &__leni {
-        font-size: 14px;
-      }
-      &__title {
-        max-width: 600px;
-        font-size: 30px;
-        line-height: 34px;
-      }
-      &__text1 {
-        font-size: 16px;
-       
-      }
-      .text__leni {
-        color: $btn-color;
-      }
-      &__text {
-        font-size: 16px;
-        max-width: 700px;
-    
-      }
-      &__btn {
-        font-size: 16px;
-        padding: 10px 40px;
-      
-      }
+    &__title {
+      max-width: 600px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &__text1 {
+      font-size: 16px;
+    }
+    .text__leni {
+      color: $btn-color;
+    }
+    &__text {
+      font-size: 16px;
+      max-width: 700px;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 10px 40px;
     }
   }
-  
+}
+
 @media screen and (max-width: 576px) {
-    .hero-site {
-      padding-top: 50px;
-      padding-bottom: 70px;
+  .hero-site {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .hero {
+    padding-top: 50px;
+    &__leni {
+      display: none;
     }
-    .hero {
-      padding-top: 50px;
-      &__leni {
-display: none;
+    &__title {
+      padding-top: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      line-height: 24px;
     }
-      &__title {
-        max-width: 400px;
-text-align: center;
-        font-size: 24px;
-        line-height: 24px;
-      }
-      &__text1 {
-display: none;       
-      }
-      .text__leni {
-        color: $btn-color;
-      }
-      &__text {
-        font-size: 16px;
-        max-width: 700px;
-    
-      }
-      &__btn {
-        font-size: 16px;
-        padding: 10px 40px;
-      
-      }
+    &__text1 {
+      display: none;
+    }
+    .text__leni {
+      color: $btn-color;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 20px;
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      padding: 6px 20px;
     }
   }
-  
+}

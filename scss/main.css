@@ -65,6 +65,7 @@ nav {
   font-size: 18px;
   line-height: 24px;
   color: #232536;
+  border-radius: 5px;
 }
 .nav__burger {
   display: none;
@@ -183,6 +184,7 @@ nav {
   line-height: 20px;
   color: #fff;
   padding-bottom: 24px;
+  text-transform: uppercase;
 }
 .hero__title {
   max-width: 900px;
@@ -328,8 +330,8 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .hero-site {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
   .hero {
     padding-top: 50px;
@@ -338,7 +340,9 @@ nav {
     display: none;
   }
   .hero__title {
+    padding-top: 10px;
     max-width: 400px;
+    margin: 0 auto;
     text-align: center;
     font-size: 24px;
     line-height: 24px;
@@ -350,11 +354,17 @@ nav {
     color: #FFD050;
   }
   .hero__text {
-    font-size: 16px;
-    max-width: 700px;
+    font-size: 12px;
+    line-height: 20px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
   }
   .hero__btn {
-    font-size: 16px;
-    padding: 10px 40px;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 20px;
   }
 }/*# sourceMappingURL=main.css.map */

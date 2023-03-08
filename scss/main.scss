@@ -1,3 +1,4 @@
+@import "./mixin";
 * {
   list-style: none;
   text-decoration: none;
@@ -10,6 +11,5 @@ img{
     vertical-align: middle;
 }
 @import './font';
-@import "./mixin";
 @import "./veraybels";
 @import "./allblockss/all-block";
