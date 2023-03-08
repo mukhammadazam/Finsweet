@@ -1,0 +1,31 @@
+nav {
+  background-color: $navbar-bg;
+}
+.nav {
+  padding-top: 30px;
+  padding-bottom: 11px;
+  @include flexfunction(row, center, space-between, wrap);
+ 
+  &__list {
+    padding-right: 83px;
+    @include flexfunction(row, center, center, wrap);
+    gap: 24px;
+    &--item a {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .login{
+        background-color: $white-color;
+        padding: 16px 48px;
+        font-family: "Sen";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #232536;
+    }
+  }
+ 
+}

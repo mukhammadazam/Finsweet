@@ -4,4 +4,57 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(.././fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Sen";
+  src: url(.././fonts/PlayfairDisplay-Regular.ttf);
+}
+nav {
+  background-color: #232536;
+}
+
+.nav {
+  padding-top: 30px;
+  padding-bottom: 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav__list {
+  padding-right: 83px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.nav__list--item a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.nav__list .login {
+  background-color: #fff;
+  padding: 16px 48px;
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
 }/*# sourceMappingURL=main.css.map */

@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
 }
+img{
+    object-fit: cover;
+    vertical-align: middle;
+}
+@import './font';
 @import "./mixin";
 @import "./veraybels";
 @import "./allblockss/all-block";
