@@ -1,9 +1,7 @@
-.list li a {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #911e1e;
-  opacity: 0.1;
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
