@@ -37,7 +37,6 @@ nav {
   padding-bottom: 26px;
 }
 .nav__list {
-  padding-right: 83px;
   display: flex;
   flex-direction: row;
   align-items: center;

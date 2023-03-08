@@ -10,7 +10,6 @@ nav {
   padding-bottom: 26px;
 
   &__list {
-    padding-right: 83px;
     @include flexfunction(row, center, center, wrap);
     gap: 24px;
     &--item a {

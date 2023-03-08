@@ -9,11 +9,12 @@ burger.addEventListener('click', () => {
     // navbar.classList.toggle('navbar')
 })
 // API FETCH QILISH UCHUN FUNKSIYA
-const url = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-08&sortBy=publishedAt&apiKey=${myKey}`
+const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${myKey}`
 async function ascFun() {
     const res = await fetch(url);
     const data = await res.json();
     try {
+        
         data.articles.map((Element) => {
             console.log(Element);
             const card = document.createElement('div');
