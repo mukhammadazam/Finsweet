@@ -151,6 +151,13 @@ nav {
   .nav__list1 {
     display: block;
     height: 100vh;
+    position: absolute;
+    z-index: 1111;
+    background-color: aqua;
+    padding: 0 240px;
+    margin-left: -20px;
+    margin-top: -30px;
+    padding-top: 50px;
   }
   .nav__list1 .login {
     padding: 8px 16px;
@@ -198,6 +205,7 @@ nav {
   color: #FFD050;
 }
 .hero__text {
+  max-width: 599px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -269,28 +277,81 @@ nav {
     font-size: 14px;
   }
   .hero__title {
-    max-width: 500px;
-    font-size: 30px;
-    line-height: 34px;
+    max-width: 600px;
+    font-size: 40px;
+    line-height: 44px;
   }
   .hero__text1 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
-    color: #fff;
   }
   .hero .text__leni {
     color: #FFD050;
   }
   .hero__text {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
-    color: #ffffff;
+  }
+  .hero__btn {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-site {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__leni {
+    font-size: 14px;
+  }
+  .hero__title {
+    max-width: 600px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .hero__text1 {
+    font-size: 16px;
+  }
+  .hero .text__leni {
+    color: #FFD050;
+  }
+  .hero__text {
+    font-size: 16px;
+    max-width: 700px;
+  }
+  .hero__btn {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-site {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__leni {
+    display: none;
+  }
+  .hero__title {
+    max-width: 400px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .hero__text1 {
+    display: none;
+  }
+  .hero .text__leni {
+    color: #FFD050;
+  }
+  .hero__text {
+    font-size: 16px;
+    max-width: 700px;
   }
   .hero__btn {
     font-size: 16px;

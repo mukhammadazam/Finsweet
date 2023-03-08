@@ -99,6 +99,13 @@ nav {
     &__list1 {
       display: block;
       height: 100vh;
+      position: absolute;
+      z-index: 1111;
+      background-color: aqua;
+      padding: 0 240px;
+      margin-left: -20px;
+      margin-top: -30px;
+      padding-top: 50px;
 
       .login {
         padding: 8px 16px;
