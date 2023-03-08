@@ -156,4 +156,32 @@ nav {
   .nav__burger {
     display: block;
   }
+}
+.hero-site {
+  background-image: url(../../imgrs/hero__beground.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.hero {
+  padding-top: 100px;
+}
+.hero__leni {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding-bottom: 24px;
+}
+.hero__title {
+  max-width: 803px;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
