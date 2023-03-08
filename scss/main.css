@@ -18,12 +18,13 @@ img {
 }
 @font-face {
   font-family: "Sen";
-  src: url(.././fonts/PlayfairDisplay-Regular.ttf);
+  src: url(.././fonts/Sen-Regular.ttf);
 }
 nav {
   background-color: #232536;
   position: fixed;
   width: 100%;
+  z-index: 1111111111111;
 }
 
 .nav {
@@ -158,15 +159,14 @@ nav {
   }
 }
 .hero-site {
+  padding-top: 128px;
+  padding-bottom: 196px;
   background-image: url(../../imgrs/hero__beground.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.hero {
-  padding-top: 100px;
-}
 .hero__leni {
   font-family: "Inter";
   font-style: normal;
@@ -177,11 +177,41 @@ nav {
   padding-bottom: 24px;
 }
 .hero__title {
-  max-width: 803px;
+  max-width: 900px;
   font-family: "Sen";
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 64px;
   color: #fff;
+}
+.hero__text1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+.hero .text__leni {
+  color: #FFD050;
+}
+.hero__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.hero__btn {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 48px;
+  border: none;
+  background-color: #FFD050;
+  color: #232536;
 }/*# sourceMappingURL=main.css.map */
