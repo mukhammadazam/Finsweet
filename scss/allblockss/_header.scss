@@ -2,10 +2,10 @@ nav {
   background-color: $navbar-bg;
 }
 .nav {
-    @include flexfunction(row, center, space-between, wrap);
+  @include flexfunction(row, center, space-between, wrap);
   padding-top: 25px;
   padding-bottom: 26px;
- 
+
   &__list {
     padding-right: 83px;
     @include flexfunction(row, center, center, wrap);
@@ -16,50 +16,91 @@ nav {
       font-weight: 400;
       font-size: 16px;
       line-height: 28px;
-      color:$white-color;
+      color: $white-color;
       opacity: 0.7;
     }
-    .link{
-        padding-left: 59px;
+    .link {
+      padding-left: 59px;
     }
-    .login{
-        background-color: $white-color;
-        padding: 16px 48px;
-        font-family: "Sen";
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-        color: #232536;
+    .login {
+      background-color: $white-color;
+      padding: 16px 48px;
+      font-family: "Sen";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #232536;
     }
   }
- &__burger{
+  &__burger {
     display: none;
- }
+  }
 }
-
-@media screen and (max-width:768px) {
-    .nav{
-        @include flexfunction(row, start, space-between, wrap);
- &__list{
-    @include flexfunction(column, center, center, wrap);
-display: none;
-}
-
- &__burger{
-    display: block;
- }
+@media screen and (max-width: 992px) {
+  .nav {
+    @include flexfunction(row, center, space-between, wrap);
+    &__list {
+      padding-right: 0px;
+      @include flexfunction(row, center, center, wrap);
+      gap: 24px;
     }
+  }
 }
-@media screen and (max-width:576px) {
-    .nav{
-        @include flexfunction(row, start, space-between, wrap);
- &__list{
-    @include flexfunction(column, center, center, wrap);
-display: none;
-}
+@media screen and (max-width: 768px) {
+  .nav {
+    @include flexfunction(row, start, space-between, wrap);
+    &__list {
+      @include flexfunction(column, center, center, wrap);
+      display: none;
+      padding-top: 150px;
+      &--item {
+        padding-bottom: 48px;
+      }
+      &--item a {
+        font-size: 30px;
+      }
 
- &__burger{
-    display: block;
- }
+      .link {
+        padding-left: 0;
+        padding-top: 24px;
+      }
     }
+
+    &__burger {
+      display: block;
+    }
+    &__list1 {
+      display: block;
+      height: 100vh;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    @include flexfunction(row, start, space-between, wrap);
+    &__list {
+      @include flexfunction(column, center, center, wrap);
+      display: none;
+      gap: 0;
+      padding-left: 0;
+    }
+    &--item {
+      padding-bottom: 48px;
+    }
+    &--item a {
+      font-size: 30px;
+    }
+    &__list1 {
+      display: block;
+      height: 100vh;
+
+      .login {
+        padding: 8px 16px;
+      }
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
 }
