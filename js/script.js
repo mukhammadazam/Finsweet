@@ -14,9 +14,11 @@ async function ascFun() {
     const res = await fetch(url);
     const data = await res.json();
     try {
-        
+
         data.articles.map((Element) => {
-            console.log(Element);
+
+          
+
             const card = document.createElement('div');
             const img = document.createElement('img');
             const cardBody = document.createElement('div');
