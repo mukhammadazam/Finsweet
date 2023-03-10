@@ -386,6 +386,29 @@ nav {
     height: 218px;
   }
 }
+.blogs__title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.title3 {
+  text-align: center;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #232536;
+}
+
+.wrapper {
+  padding-bottom: 73px;
+}
+
 .blog {
   padding-left: 44px;
   max-width: 296px;
@@ -394,8 +417,10 @@ nav {
   border: 1px solid #b5b6ba;
 }
 .blog img {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 .blog__title {
   font-family: "Sen";
@@ -414,4 +439,9 @@ nav {
   color: #6D6E76;
   max-width: 232px;
   padding-bottom: 31px;
+}
+.blog__col:hover {
+  background-color: #FFD050;
+  transform: rotateY(360deg);
+  transition: all 1s ease;
 }/*# sourceMappingURL=main.css.map */

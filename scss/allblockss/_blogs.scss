@@ -23,10 +23,32 @@
   
   }
 }
+.blogs__title{
+  font-family: 'Sen';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+color: #000000;
+}
+.title3{
+  text-align: center;
+  font-family: 'Sen';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+color: #232536;
+}
+.wrapper{
+  padding-bottom: 73px;
+}
 .blog{
   img{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
   }
   padding-left: 44px;
   max-width: 296px;
@@ -51,4 +73,12 @@ color: #6D6E76;
 max-width: 232px;
 padding-bottom: 31px;
 }
+&__col{
+  &:hover{
+    background-color: $btn-color;
+    transform: rotateY(360deg);
+    transition: all 1s ease;
+  }
+}
+
 }
