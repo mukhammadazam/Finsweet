@@ -53,4 +53,15 @@ async function ascFun() {
 }
 ascFun()
 const url1=`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
-console.log(url1);
+async function ascFun1(){
+    const respone=await fetch(url1);
+    const data=await respone.json();
+try {
+  data.articles.map((blogpeg)=>{
+    
+  })
+    
+} catch (error) {
+    
+}}
+ascFun1()
