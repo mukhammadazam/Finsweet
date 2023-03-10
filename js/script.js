@@ -52,16 +52,32 @@ async function ascFun() {
     }
 }
 ascFun()
-const url1=`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
-async function ascFun1(){
-    const respone=await fetch(url1);
-    const data=await respone.json();
-try {
-  data.articles.map((blogpeg)=>{
-    
-  })
-    
-} catch (error) {
-    
-}}
+const url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+async function ascFun1() {
+    const row1 = document.querySelector('.row1');
+    const respone = await fetch(url1);
+    const data = await respone.json();
+    try {
+        data.articles.map((blogpeg) => {
+            const card1 = document.createElement('div');
+            const img1 = document.createElement('img');
+            const card1Body = document.createElement('div');
+            const bodyLeni = document.createElement('span');
+            const bodyTitle = document.createElement('h2');
+            const bodtText = document.createElement('p');
+            console.log(blogpeg.description.slice(1, 100));
+            img1.src = blogpeg.urlToImage;
+            img1.alt = blogpeg.source.name
+            bodyLeni.textContent = `Business`;
+            bodyTitle.textContent = blogpeg.title
+            bodtText.textContent = blogpeg.description.slice(1, 100)
+            card1Body.append(bodyLeni, bodyTitle, bodtText);
+            card1.append(img1, card1Body);
+            row1.appendChild(card1);
+        })
+
+    } catch (error) {
+
+    }
+}
 ascFun1()
