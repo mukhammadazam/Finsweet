@@ -509,4 +509,10 @@ nav {
   text-transform: uppercase;
   color: #232536;
   cursor: pointer;
+}
+
+.row1 img {
+  max-width: 447px;
+  width: 100%;
+  height: 312px;
 }/*# sourceMappingURL=main.css.map */

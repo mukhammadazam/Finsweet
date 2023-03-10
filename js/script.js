@@ -65,12 +65,13 @@ async function ascFun1() {
             const bodyLeni = document.createElement('span');
             const bodyTitle = document.createElement('h2');
             const bodtText = document.createElement('p');
+            bodyLeni.classList.add('text-uppercase','text-primary');
             console.log(blogpeg.description.slice(1, 100));
             img1.src = blogpeg.urlToImage;
             img1.alt = blogpeg.source.name
             bodyLeni.textContent = `Business`;
-            bodyTitle.textContent = blogpeg.title
-            bodtText.textContent = blogpeg.description.slice(1, 100)
+            bodyTitle.textContent = blogpeg.title.slice(1, 80)
+            bodtText.textContent = blogpeg.description.slice(1, 150)
             card1Body.append(bodyLeni, bodyTitle, bodtText);
             card1.append(img1, card1Body);
             row1.appendChild(card1);
