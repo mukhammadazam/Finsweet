@@ -444,4 +444,32 @@ nav {
   background-color: #FFD050;
   transform: rotateY(360deg);
   transition: all 1s ease;
+}
+
+.footer {
+  background: #232536;
+  padding: 54px 0;
+}
+
+.foter__text1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.7;
+}
+.foter__text2 a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.hero1 {
+  background: #F4F0F8;
 }/*# sourceMappingURL=main.css.map */
