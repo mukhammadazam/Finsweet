@@ -142,21 +142,17 @@ nav {
     gap: 0;
     padding-left: 0;
   }
-  .nav--item {
-    padding-bottom: 48px;
-  }
   .nav--item a {
-    font-size: 30px;
+    padding-bottom: 0px;
   }
   .nav__list1 {
     display: block;
-    height: 100vh;
+    background-color: #232536;
+    padding-left: 30px;
+    margin-left: -30px;
+    height: 60vh;
     position: absolute;
     z-index: 1111;
-    background-color: aqua;
-    padding: 0 240px;
-    margin-left: -20px;
-    margin-top: -30px;
     padding-top: 50px;
   }
   .nav__list1 .login {
@@ -171,7 +167,7 @@ nav {
   padding-bottom: 196px;
   background-image: url(../../imgrs/hero__beground.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -333,18 +329,18 @@ nav {
     padding-bottom: 80px;
   }
   .hero {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .hero__leni {
     display: none;
   }
   .hero__title {
-    padding-top: 10px;
+    padding-top: 50px;
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 40px;
   }
   .hero__text1 {
     display: none;
@@ -353,18 +349,19 @@ nav {
     color: #FFD050;
   }
   .hero__text {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 30px;
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 20px;
   }
   .hero__btn {
     display: block;
-    margin: 0 auto;
-    padding: 6px 20px;
+    margin: 30px auto;
+    padding: 12px 30px;
   }
 }
 .card {
@@ -375,4 +372,46 @@ nav {
   max-width: 405px;
   width: 100%;
   height: 318px;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    max-width: 405px;
+    width: 100%;
+  }
+  .card img {
+    margin: 0 auto;
+    max-width: 255px;
+    width: 100%;
+    height: 218px;
+  }
+}
+.blog {
+  padding-left: 44px;
+  max-width: 296px;
+  height: 221px;
+  width: 100%;
+  border: 1px solid #b5b6ba;
+}
+.blog img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog__title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #232536;
+}
+.blog__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6D6E76;
+  max-width: 232px;
+  padding-bottom: 31px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .hero-site {
   padding-top: 128px;
   padding-bottom: 196px;
-  @include BG(url(../../imgrs/hero__beground.png), no-repeat, 100%, center);
+  @include BG(url(../../imgrs/hero__beground.png), no-repeat, cover, center);
 }
 .hero {
   &__leni {
@@ -165,17 +165,17 @@
     padding-bottom: 80px;
   }
   .hero {
-    padding-top: 50px;
+    padding-top: 100px;
     &__leni {
       display: none;
     }
     &__title {
-      padding-top: 10px;
+      padding-top: 50px;
       max-width: 400px;
       margin: 0 auto;
       text-align: center;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 40px;
+      line-height: 40px;
     }
     &__text1 {
       display: none;
@@ -184,18 +184,20 @@
       color: $btn-color;
     }
     &__text {
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 16px;
+      line-height: 30px;
       max-width: 300px;
       width: 100%;
       margin: 0 auto;
       text-align: center;
+      padding-top: 30px;
       padding-bottom: 20px;
     }
     &__btn {
+      
       display: block;
-      margin: 0 auto;
-      padding: 6px 20px;
+      margin: 30px auto;
+      padding: 12px 30px;
     }
   }
 }
