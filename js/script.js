@@ -10,6 +10,7 @@ burger.addEventListener('click', () => {
 })
 // API FETCH QILISH UCHUN FUNKSIYA
 const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${myKey}`
+console.log(url);
 async function ascFun() {
     const res = await fetch(url);
     const data = await res.json();
@@ -65,7 +66,7 @@ async function ascFun1() {
             const bodyLeni = document.createElement('span');
             const bodyTitle = document.createElement('h2');
             const bodtText = document.createElement('p');
-            bodyLeni.classList.add('text-uppercase','text-primary');
+            bodyLeni.classList.add('text-uppercase', 'text-primary');
             console.log(blogpeg.description.slice(1, 100));
             img1.src = blogpeg.urlToImage;
             img1.alt = blogpeg.source.name
@@ -78,7 +79,7 @@ async function ascFun1() {
         })
 
     } catch (error) {
-
+        console.error(error);
     }
 }
 ascFun1()
