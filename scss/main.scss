@@ -10,6 +10,9 @@ img{
     object-fit: cover;
     vertical-align: middle;
 }
+body{
+  overflow-x: hidden
+}
 @import './font';
 @import "./veraybels";
 @import "./allblockss/all-block";

@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrab/bootstrap.min.css">
-    <link rel="stylesheet" href="./scss/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./bootstrab/bootstrap.min.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
     <header>
-        <nav>
+      <nav>
+        <div class="container">
+          <div class="nav">
+            <a href="#"> <img src="./imgrs/logo.svg" alt="logo" /></a>
+
+            <ul class="nav__list mb-0">
+              <li class="nav__list--item">
+                <a
+                  class="text-decoration-none"
+                  target="_blank"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__list--item">
+                <a
+                  class="text-decoration-none"
+                  target="_blank"
+                  href="./index1.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav__list--item">
+                <a
+                  class="text-decoration-none"
+                  target="_blank"
+                  href="./index2.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav__list--item">
+                <a class="text-decoration-none" href="@">Register</a>
+              </li>
+              <li class="link">
+                <a class="login text-decoration-none" href="#">Login</a>
+              </li>
+            </ul>
+            <a class="nav__burger" href="#"
+              ><img
+                src="https://th.bing.com/th/id/OIP.COi00w2fX2TVgx0eZx0z_QAAAA?pid=ImgDet&rs=1"
+                alt="burger"
+                width="40"
+                height="40"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="blog-peg">
           <div class="container">
-            <div class="nav">
-              <a href="#"> <img src="./imgrs/logo.svg" alt="logo" /></a>
-  
-              <ul class="nav__list mb-0">
-                <li class="nav__list--item">
-                  <a class="text-decoration-none" target="_blank"  href="./index.html">Home</a>
-                </li>
-                <li class="nav__list--item">
-                  <a class="text-decoration-none" target="_blank"  href="./index1.html">Blog</a>
-                </li>
-                <li class="nav__list--item">
-                  <a class="text-decoration-none" target="_blank" href="./index2.html">About Us</a>
-                </li>
-                <li class="nav__list--item">
-                  <a class="text-decoration-none" href="@">Register</a>
-                </li>
-                <li class="link">
-                  <a class="login text-decoration-none" href="#">Login</a>
-                </li>
-              </ul>
-              <a class="nav__burger" href="#"
-                ><img
-                  src="https://th.bing.com/th/id/OIP.COi00w2fX2TVgx0eZx0z_QAAAA?pid=ImgDet&rs=1"
-                  alt="burger"
-                  width="40"
-                  height="40"
-              /></a>
+            <div class="blog-hero">
+              <h1 class="blog-hero__title text-center pb-3">Startup</h1>
+              <p class="blog-hero__text text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </p>
+              <a  class=" text-decoration-none  "><p class="blog-hero__btn pt-5 text-center ">Blog > startup</p></a>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
-        <section>
-          <div class="hero1">
-            
-          </div>
-        </section>
-      </main>
-</body>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

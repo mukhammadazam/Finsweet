@@ -52,3 +52,5 @@ async function ascFun() {
     }
 }
 ascFun()
+const url1=`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+console.log(url1);
