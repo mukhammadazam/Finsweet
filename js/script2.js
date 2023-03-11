@@ -12,6 +12,8 @@ async function ascFun2() {
             const bodyLeni2 = document.createElement('span');
             const bodyTitle2 = document.createElement('h2');
             const bodtText2 = document.createElement('p');
+            card2.classList.add('card2');
+            
             img2.src = Element.urlToImage;
             img2.alt = Element.author;
             bodyTitle2.textContent = Element.title

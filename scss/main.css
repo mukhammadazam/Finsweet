@@ -546,4 +546,13 @@ input {
   max-width: 447px;
   width: 100%;
   height: 312px;
+}
+
+.card2 {
+  padding-top: 100px;
+}
+.card2 img {
+  max-width: 547px;
+  width: 100%;
+  height: 318px;
 }/*# sourceMappingURL=main.css.map */
