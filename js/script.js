@@ -2,7 +2,7 @@ const navList = document.querySelector('.nav__list');
 const burger = document.querySelector(".nav__burger");
 const navbar = document.querySelector(".nav");
 const row = document.querySelector('.row');
-const myKey = 'a5bf6f3b316846b689ef768df6effaad';
+const myKey = 'f4067fe682044e6787e881d30a1c01ba';
 // MODAL UCHUN FUNKSIYA
 burger.addEventListener('click', () => {
     navList.classList.toggle('nav__list1');
@@ -66,7 +66,12 @@ async function ascFun1() {
             const bodyLeni = document.createElement('span');
             const bodyTitle = document.createElement('h2');
             const bodtText = document.createElement('p');
-            bodyLeni.classList.add('text-uppercase', 'text-primary');
+            card1.classList.add('d-lg-flex', 'align-items-lg-center', 'justify-content-lg-between','p-sm-5');
+            card1Body.classList.add('ps-lg-5')
+            bodyLeni.classList.add('text-uppercase', 'text-primary', 'd-block','pb-3','pt-2','text-center','text-sm-start');
+            bodyTitle.classList.add('bodytitle','width-50','pb-5','fs-2','text-center','text-sm-start');
+            bodtText.classList.add('bodytext','w-sm-75','text-center','mx-0','text-sm-start');
+            img1.classList.add('p-5','p-sm-0')
             console.log(blogpeg.description.slice(1, 100));
             img1.src = blogpeg.urlToImage;
             img1.alt = blogpeg.source.name
