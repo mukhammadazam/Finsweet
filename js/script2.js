@@ -1,6 +1,12 @@
+const input = document.querySelector('.input')
+let url2;
+if (input.value) {
+    url2 = `https://newsapi.org/v2/everything?${input.value}thenextweb.com&apiKey=${myKey}`
+    console.log(url2);
+} else {
 
-let url2 = `https://newsapi.org/v2/everything?q=2023-03-11&sortBy=popularity&apiKey=${myKey}`
-// let url2=`https://newsapi.org/v2/everything?domains=${input.value}thenextweb.com&apiKey=${myKey}`
+    url2 = `https://newsapi.org/v2/everything?q=2023-03-11&sortBy=popularity&apiKey=${myKey}`
+}
 async function ascFun2() {
     const resp = await fetch(url2);
     const data2 = await resp.json();
@@ -13,14 +19,14 @@ async function ascFun2() {
             const bodyLeni2 = document.createElement('span');
             const bodyTitle2 = document.createElement('h2');
             const bodtText2 = document.createElement('p');
-            card2.classList.add('card2','d-lg-flex','align-items-center','justify-content-lg-between');
-            card1Body2.classList.add('ps-5')
+            card2.classList.add('card2', 'd-lg-flex', 'align-items-center', 'justify-content-lg-between');
+            card1Body2.classList.add('ps-lg-5', 'p-5', 'p-sm-0')
+            img2.classList.add('p-5', 'p-sm-0')
             img2.src = Element.urlToImage;
             img2.alt = Element.author;
             bodyTitle2.textContent = Element.title
             bodyLeni2.textContent = Element.author;
-            bodtText2.textContent = Element.content
-            card1Body2.append(bodyLeni2, bodyTitle2, bodtText2);
+            card1Body2.append(bodyLeni2, bodyTitle2,);
             card2.append(img2, card1Body2);
             row3.appendChild(card2)
         })
@@ -29,3 +35,9 @@ async function ascFun2() {
     }
 }
 ascFun2()
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        ascFun2()
+
+    }
+})

@@ -2,7 +2,7 @@ const navList = document.querySelector('.nav__list');
 const burger = document.querySelector(".nav__burger");
 const navbar = document.querySelector(".nav");
 const row = document.querySelector('.row');
-const myKey = 'f4067fe682044e6787e881d30a1c01ba';
+const myKey = '6a5d12bfbd1c41b380511b0dcafb626f';
 // MODAL UCHUN FUNKSIYA
 burger.addEventListener('click', () => {
     navList.classList.toggle('nav__list1');
