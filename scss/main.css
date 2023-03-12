@@ -555,4 +555,13 @@ input {
   max-width: 547px;
   width: 100%;
   height: 318px;
+}
+
+.register__form input {
+  max-width: 769px;
+  width: 100%;
+}
+.register__form--btn {
+  max-width: 769px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
