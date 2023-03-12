@@ -8,7 +8,7 @@ async function ascFun1() {
         url1 = `https://newsapi.org/v2/everything?q=${inputv.value}&from=2023-03-11&to=2023-03-11&sortBy=popularity&apiKey=${myKey}`;
         console.log(url1);
     } else {
-        // url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+        url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
 
     }
 

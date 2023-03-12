@@ -1,18 +1,20 @@
-const input = document.querySelector('.input')
-let url2;
+const input = document.querySelector('.input1')
+
+async function ascFun2() {
+    let url2;
 if (input.value) {
-    url2 = `https://newsapi.org/v2/everything?${input.value}thenextweb.com&apiKey=${myKey}`
+    url2 = `https://newsapi.org/v2/everything?q=${input.value}&from=2023-03-11&to=2023-03-11&sortBy=popularity&apiKey=${myKey}`
     console.log(url2);
 } else {
 
     url2 = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-12&sortBy=publishedAt&apiKey=${myKey}`
 }
-async function ascFun2() {
     const resp = await fetch(url2);
     const data2 = await resp.json();
     try {
+        const row3 = document.querySelector('.row2');
+row3.innerHTML='';
         data2.articles.map((Element) => {
-            const row3 = document.querySelector('.row2');
             const card2 = document.createElement('div');
             const img2 = document.createElement('img');
             const card1Body2 = document.createElement('div');
