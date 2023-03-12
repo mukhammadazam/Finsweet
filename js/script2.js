@@ -5,7 +5,7 @@ if (input.value) {
     console.log(url2);
 } else {
 
-    url2 = `https://newsapi.org/v2/everything?q=2023-03-11&sortBy=popularity&apiKey=${myKey}`
+    url2 = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-12&sortBy=publishedAt&apiKey=${myKey}`
 }
 async function ascFun2() {
     const resp = await fetch(url2);
