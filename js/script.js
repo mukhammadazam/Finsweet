@@ -10,7 +10,7 @@ burger.addEventListener('click', () => {
 })
 // API FETCH QILISH UCHUN FUNKSIYA
 const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${myKey}`
-console.log(url);
+// console.log(url);
 const loader_container = document.querySelector('.loader-container');
 const loader = document.createElement('div');
 loader.classList = 'loader';
@@ -18,10 +18,7 @@ loader_container.appendChild(loader);
 async function ascFun() {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data.articles);
-    console.log(data.articles.slice(1, 3));
     try {
-        console.log(data.articles);
         data.articles.slice(0, 3).map((Element, index) => {
             console.log(index);
 

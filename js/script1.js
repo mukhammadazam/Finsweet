@@ -1,16 +1,22 @@
 
 //2-FUNCTION ---------------------------------------------------------------2-----------------------------------
-
+const inputv = document.querySelector('.input').value
 async function ascFun1() {
-    // const input = document.querySelector('.input');
-    let url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
-    
+    let url1;
+    // console.log(url1);
+    if (inputv) {
+        url1 = `https://newsapi.org/v2/everything?q=${inputv}&from=2023-03-11&sortBy=popularity&apiKey=${myKey}`
+console.log(url1);
+    } else {
+        url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+
+    }
     const row1 = document.querySelector('.row1');
     const respone = await fetch(url1);
     const data = await respone.json();
     try {
         data.articles.map((blogpeg) => {
-            console.log(data.articles);
+            // console.log(data.articles);
             const card1 = document.createElement('div');
             const img1 = document.createElement('img');
             const card1Body = document.createElement('div');
@@ -23,7 +29,6 @@ async function ascFun1() {
             bodyTitle.classList.add('bodytitle', 'width-50', 'pb-5', 'fs-2', 'text-center', 'text-sm-start');
             bodtText.classList.add('bodytext', 'w-sm-75', 'text-center', 'mx-0', 'text-sm-start');
             img1.classList.add('p-5', 'p-sm-0')
-            console.log(blogpeg.description.slice(1, 100));
             img1.src = blogpeg.urlToImage;
             img1.alt = blogpeg.source.name
             bodyLeni.textContent = `Business`;
@@ -36,6 +41,15 @@ async function ascFun1() {
 
     } catch (error) {
         console.error(error);
-    } 
+    }
 }
+const input = document.querySelector('.input');
+
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        ascFun1()
+
+    }
+})
 ascFun1()
+
