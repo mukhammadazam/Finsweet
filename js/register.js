@@ -55,7 +55,7 @@ function valdeshin() {
         allSpan[3].classList.add('smal1')
 
 
-    } else if (passwordValue !== cnfpasswordValue && passwordValue.lenth >= 8) {
+    } else if (passwordValue !== cnfpasswordValue) {
 
 
         password.classList.add('gd')
@@ -75,7 +75,7 @@ function valdeshin() {
         allSpan[4].classList.add('smal1')
 
 
-    } else if (cnfpasswordValue !== passwordValue && cnfpasswordValue.lenth >= 8) {
+    } else if (cnfpasswordValue !== passwordValue) {
 
 
         conPassword.classList.add('gd')
