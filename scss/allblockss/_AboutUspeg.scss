@@ -1,3 +1,45 @@
+.about{
+padding-top: 156px;
+padding-bottom: 96px;
+padding-top: 128px;
+padding-bottom: 196px;
+@include BG(url(../../imgrs/Background.png), no-repeat, cover, center);
+}
+.hero__text2{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #4C4C4C;
+}
+.hero__leni11{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #232536;
+}
+.hero__text12{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+max-width: 600px;
+color: #6D6E76;
+}
+@media screen and (max-width:576px){
+  .img{
+width: 350px;
+margin: 0 auto;
+
+  }
+}
+
 .card2{
     padding-top: 100px;
     
@@ -5,5 +47,15 @@
     max-width: 547px;
     width: 100%;
     height: 318px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen  and (max-width:768px){
+  .card2{
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    
   }
 }

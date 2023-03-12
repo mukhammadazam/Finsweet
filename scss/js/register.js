@@ -13,6 +13,10 @@ function isEmail(email) {
 }
 regiterForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    valdeshin()
+})
+
+function valdeshin() {
 
     const userNameValue = firstName.value.trim();
     const lastNameValue = lastName.value.trim();
@@ -51,7 +55,7 @@ regiterForm.addEventListener('submit', (e) => {
         allSpan[3].classList.add('smal1')
 
 
-    } else if (passwordValue !== cnfpasswordValue) {
+    } else if (passwordValue !== cnfpasswordValue && passwordValue.lenth >= 8) {
 
 
         password.classList.add('gd')
@@ -71,7 +75,7 @@ regiterForm.addEventListener('submit', (e) => {
         allSpan[4].classList.add('smal1')
 
 
-    } else if (cnfpasswordValue !== passwordValue) {
+    } else if (cnfpasswordValue !== passwordValue && cnfpasswordValue.lenth >= 8) {
 
 
         conPassword.classList.add('gd')
@@ -86,8 +90,10 @@ regiterForm.addEventListener('submit', (e) => {
         conPassword.classList.add('grean');
 
     }
-})
-
+    firstName.value = '';
+    lastName.value = '';
+    userName.value = '';
+}
 
 
 
