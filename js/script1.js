@@ -1,22 +1,25 @@
 
 //2-FUNCTION ---------------------------------------------------------------2-----------------------------------
-const inputv = document.querySelector('.input').value
+const inputv = document.querySelector('.input');
 async function ascFun1() {
     let url1;
     // console.log(url1);
-    if (inputv) {
-        url1 = `https://newsapi.org/v2/everything?q=${inputv}&from=2023-03-11&sortBy=popularity&apiKey=${myKey}`
-console.log(url1);
+    if (inputv.value) {
+        url1 = `https://newsapi.org/v2/everything?q=${inputv.value}&from=2023-03-11&to=2023-03-11&sortBy=popularity&apiKey=${myKey}`;
+        console.log(url1);
     } else {
-        url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
+        // url1 = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${myKey}`
 
     }
+
     const row1 = document.querySelector('.row1');
     const respone = await fetch(url1);
     const data = await respone.json();
     try {
+        row1.innerHTML='';
         data.articles.map((blogpeg) => {
-            // console.log(data.articles);
+            console.log(data.articles[0].content
+                );
             const card1 = document.createElement('div');
             const img1 = document.createElement('img');
             const card1Body = document.createElement('div');

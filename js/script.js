@@ -20,7 +20,7 @@ async function ascFun() {
     const data = await res.json();
     try {
         data.articles.slice(0, 3).map((Element, index) => {
-            console.log(index);
+            // console.log(index);
 
             const card = document.createElement('div');
             const img = document.createElement('img');
