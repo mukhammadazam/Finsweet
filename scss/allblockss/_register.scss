@@ -1,12 +1,45 @@
 .register {
+  padding-top: 100px;
+  &__title{
+    padding-top: 30px;
+    font-family: 'Sen';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+color: $navbar-bg;
+    padding-bottom: 70px;
+  }
   &__form {
- input{
-    max-width: 769px;
-    width: 100%;
- } 
- &--btn{
-    max-width: 769px;
-    width: 100%;
- }
-}
+    padding-bottom: 150px;
+    input {
+      max-width: 769px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 0 24px 24px;
+      margin-bottom: 20px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $navbar-bg;
+      border: 1px solid rgba(109, 110, 118, 0.5);
+      border-radius: 2px;
+    }
+    &--btn {
+      max-width: 769px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 0;
+      margin-top: 54px;
+      background-color: $btn-color;
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: $navbar-bg;
+    }
+  }
 }
