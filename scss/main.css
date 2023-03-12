@@ -573,6 +573,12 @@ input {
 .register__form {
   padding-bottom: 150px;
 }
+.register__form .formcontrol {
+  max-width: 769px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 .register__form input {
   max-width: 769px;
   width: 100%;

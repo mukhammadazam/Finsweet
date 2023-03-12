@@ -27,18 +27,19 @@ async function ascFun() {
             const cardBody = document.createElement('div');
             const wrapper = document.createElement('div');
             const title = document.createElement('h5');
-            const title1 = document.createElement('h6');
+            const title1 = document.createElement('a');
             const text = document.createElement('p');
             const dataTime = document.createElement('div');
             card.classList.add('card', 'border-0',);
             cardBody.classList.add('card-body');
-            title1.classList.add('card-title', 'text-center');
+            title1.classList.add('card-title', 'text-center', 'text-decoration-none', 'text-dark');
             text.classList.add('text-center')
             wrapper.classList.add('d-flex', 'align-items-start', 'gap-4', 'pt-2', 'justify-content-center')
             img.src = Element.urlToImage;
-            dataTime.innerHTML = `<input class='border-0' type='date'/>`
+            dataTime.innerHTML = Element.publishedAt.slice(0, 10)
             title.textContent = Element.author;
             title1.textContent = Element.content
+            title1.href = Element.url
             text.textContent = Element.description
             cardBody.appendChild(title);
             wrapper.append(dataTime, title);
@@ -51,7 +52,7 @@ async function ascFun() {
         })
     } catch (error) {
         console.error(error);
-    }finally {
+    } finally {
         const loader = document.querySelector('.loader');
         if (loader) {
             loader_container.remove()

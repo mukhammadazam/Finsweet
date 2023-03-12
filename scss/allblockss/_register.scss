@@ -12,6 +12,12 @@ color: $navbar-bg;
   }
   &__form {
     padding-bottom: 150px;
+    .formcontrol{
+      max-width: 769px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
     input {
       max-width: 769px;
       width: 100%;
@@ -41,5 +47,9 @@ color: $navbar-bg;
       line-height: 32px;
       color: $navbar-bg;
     }
+    
   }
+  
 }
+
+
