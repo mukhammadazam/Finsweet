@@ -18,6 +18,24 @@ color: $navbar-bg;
       margin: 0 auto;
       position: relative;
     }
+    .gd{
+   border: 1px solid red;
+    }
+  .smal{
+    display: none;
+  }
+  .smal1{
+    display: block;
+    color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+
+  }
+  .grean{
+    border: 1px solid green;
+  }
+  
     input {
       max-width: 769px;
       width: 100%;

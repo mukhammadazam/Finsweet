@@ -7,7 +7,7 @@ if (input.value) {
     console.log(url2);
 } else {
 
-    url2 = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-12&sortBy=publishedAt&apiKey=${myKey}`
+    url2 = `https://newsapi.org/v2/everything?q=all&from=2023-02-12&sortBy=publishedAt&apiKey=${myKey}`
 }
     const resp = await fetch(url2);
     const data2 = await resp.json();

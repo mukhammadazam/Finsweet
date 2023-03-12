@@ -579,6 +579,22 @@ input {
   margin: 0 auto;
   position: relative;
 }
+.register__form .gd {
+  border: 1px solid red;
+}
+.register__form .smal {
+  display: none;
+}
+.register__form .smal1 {
+  display: block;
+  color: red;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+.register__form .grean {
+  border: 1px solid green;
+}
 .register__form input {
   max-width: 769px;
   width: 100%;
