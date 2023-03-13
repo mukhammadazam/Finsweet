@@ -88,12 +88,13 @@ function valdeshin() {
         conPassword.classList.add('grean');
 
     }
-    if (emailValue !== '' && passwordValue.length >= 8 && lastNameValue !== '' && userNameValue !=='') {
+    if (emailValue !== '' && passwordValue.length >= 8 && lastNameValue !== '' && userNameValue !== '') {
         const token = 'jdsgkjdhweuriwryiyfew';
         window.location.href = (token, 'blog.html')
         alert('blog pechga utishni hohlayasizmi')
-    }else{
-        alert('molumot xato kelyapti')
+    }
+    else {
+        confirm('passwordda xato bor parol 8 tadan kam bulsa blog pegga utolmaysiz  ')
     }
     firstName.value = '';
     lastName.value = '';
