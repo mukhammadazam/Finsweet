@@ -63,8 +63,7 @@ function valdeshin() {
     }
 
     else {
-        const token = 'jdsgkjdhweuriwryiyfew';
-        window.location.href = (token, 'blog.html')
+
         password.classList.remove('gd')
         allSpan[3].classList.remove('smal1')
         password.classList.add('grean');
@@ -78,17 +77,23 @@ function valdeshin() {
     } else if (cnfpasswordValue !== passwordValue) {
 
 
-        conPassword.classList.add('gd')
+        conPassword.classList.add('gd');
         allSpan[4].classList.add('smal1')
     }
 
     else {
-        const token = 'jdsgkjdhweuriwryiyfew';
-        window.location.href = (token, 'blog.html')
+
         conPassword.classList.remove('gd')
         allSpan[4].classList.remove('smal1')
         conPassword.classList.add('grean');
 
+    }
+    if (emailValue !== '' && passwordValue.length >= 8 && lastNameValue !== '' && userNameValue !=='') {
+        const token = 'jdsgkjdhweuriwryiyfew';
+        window.location.href = (token, 'blog.html')
+        alert('blog pechga utishni hohlayasizmi')
+    }else{
+        alert('molumot xato kelyapti')
     }
     firstName.value = '';
     lastName.value = '';
