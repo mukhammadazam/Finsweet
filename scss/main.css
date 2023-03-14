@@ -142,8 +142,8 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    display: none;
     gap: 0;
+    display: none;
     padding-left: 0;
   }
   .nav--item a {
@@ -154,7 +154,7 @@ nav {
     background-color: #232536;
     padding-left: 30px;
     margin-left: -30px;
-    height: 60vh;
+    height: 70vh;
     position: absolute;
     z-index: 1111;
     padding-top: 50px;

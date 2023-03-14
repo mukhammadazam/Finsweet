@@ -51,7 +51,6 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .nav {
-   
     @include flexfunction(row, start, space-between, wrap);
     &__list {
       @include flexfunction(column, center, center, wrap);
@@ -79,27 +78,27 @@ nav {
       height: 100vh;
     }
   }
- 
 }
 @media screen and (max-width: 576px) {
   .nav {
     @include flexfunction(row, start, space-between, wrap);
     &__list {
       @include flexfunction(column, center, center, wrap);
-      display: none;
       gap: 0;
+      display: none;
       padding-left: 0;
+
     }
-  
+
     &--item a {
-      padding-bottom:   0px;
+      padding-bottom: 0px;
     }
     &__list1 {
       display: block;
       background-color: $navbar-bg;
       padding-left: 30px;
-margin-left: -30px;
-height: 60vh;
+      margin-left: -30px;
+      height: 70vh;
       position: absolute;
       z-index: 1111;
       padding-top: 50px;
