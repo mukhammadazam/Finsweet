@@ -105,12 +105,28 @@ post.addEventListener('click', (e) => {
         crud__form.querySelector('.inputTitle').value = aTitle;
         crud__form.querySelector('.unputText').value = pText;
 
-
-
     }
 
 })
-
+async function idetFun(inputTitle, inputText, heddinId) {
+    const dataF = new FormData();
+    dataF.append('title', inputTitle);
+    dataF.append('description', inputText);
+    try {
+        const reespose = await fetch(`${blogUrl}/${heddinId}`, {
+            method: 'PUT',
+            body: dataF
+        })
+        const data = reespose.json()
+        if (document.querySelector('h1').textContent === heddinId.toString()) {
+            document.querySelector('h5').textContent = inputTitle;
+            document.querySelector('p').textContent = inputText;
+        }
+       console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+}
 async function fun(id) {
     try {
         const reespose = await fetch(`${blogUrl}/${id}`, {
@@ -125,24 +141,4 @@ async function fun(id) {
     }
 
 
-}
-async function idetFun(inputTitle, inputText, heddinId) {
-    const dataF = new FormData();
-    dataF.append('title', inputTitle);
-    dataF.append('description', inputText);
-    try {
-        const reespose = await fetch(`${blogUrl}/${heddinId}`, {
-            method: 'PUT',
-            body: dataF
-        })
-        const data = reespose.json()
-        if (document.querySelector('h1').textContent === heddinId.toString()) {
-            document.querySelector('h5').textContent = inputTitle.value;
-            document.querySelector('p').textContent = inputText.value;
-
-        }
-        return data
-    } catch (error) {
-        console.error(error);
-    }
 }
