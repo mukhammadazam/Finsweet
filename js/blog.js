@@ -17,7 +17,7 @@ async function blogFun() {
         const par = document.createElement('p')
 
         blogCard.setAttribute('data-id', `${el.id}`)
-        blogCard.classList.add('col-6', 'col-sm-6', 'col-lg-3', 'justify-content-sm-center', 'cartt', 'card', 'm-5','m-sm-0','mb-5')
+        blogCard.classList.add('col-6', 'col-sm-6', 'col-lg-3', 'justify-content-sm-center', 'cartt', 'card', 'm-5', 'm-sm-0', 'mb-5')
         title.classList.add('w-100',)
         Dbtn.className = 'delete text-white border-0 bg-danger';
         Edit.className = 'edit text-white border-0 bg-primary mb-1'
@@ -72,9 +72,10 @@ crud__form.addEventListener('submit', (e) => {
                 Dbtn.className = 'delete  d-block  text-white border-0 bg-danger';
                 Edit.className = 'edit d-block text-white border-0 bg-primary mb-1'
                 img.src = avatarUrl
-                id.textContent = data.id
-                title.textContent = data.title
-                par.textContent = data.description
+                id.textContent = data.id === id
+                title.textContent = data.title = inputTitle
+                console.log(data.title);
+                par.textContent = data.description = inputText
                 Dbtn.textContent = 'Delete';
                 Edit.textContent = 'Edit'
                 blogCard.append(img, id, title, par, Dbtn, Edit)
@@ -84,7 +85,7 @@ crud__form.addEventListener('submit', (e) => {
             }
 
         })
-   
+
     }
 
 })
@@ -151,6 +152,6 @@ async function fun(id) {
         console.error(error);
     }
 
-   
+
 }
 
