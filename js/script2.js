@@ -30,7 +30,7 @@ async function ascFun2() {
                 card1Body2.classList.add('ps-lg-5', 'p-5', 'p-sm-0')
                 img2.classList.add('p-5', 'p-sm-0');
                 bodyTitle2.classList.add('text-center', 'text-sm-start')
-                bodyLeni2.classList.add('d-block', 'text-center', 'text-sm-start','pb-3')
+                bodyLeni2.classList.add('d-block', 'text-center', 'text-sm-start','pb-3','pt-3','pt-lg-0')
                 bodtText2.classList.add('text-center', 'text-sm-start')
                 img2.src = Element.urlToImage;
                 img2.alt = Element.author;

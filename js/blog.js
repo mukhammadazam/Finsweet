@@ -17,14 +17,14 @@ async function blogFun() {
         const par = document.createElement('p')
 
         blogCard.setAttribute('data-id', `${el.id}`)
-        blogCard.classList.add('col-12','col-sm-2','col-lg-3', 'cartt','card','m-5')
-        title.classList.add('w-50')
-        Dbtn.className = 'delete border-0 bg-danger';
-        Edit.className = 'edit'
+        blogCard.classList.add('col-6', 'col-sm-6', 'col-lg-3', 'justify-content-sm-center', 'cartt', 'card', 'm-5','m-sm-0','mb-5')
+        title.classList.add('w-100',)
+        Dbtn.className = 'delete text-white border-0 bg-danger';
+        Edit.className = 'edit text-white border-0 bg-primary mb-1'
         img.src = el.image
         id.textContent = el.id
-        title.textContent = el.title.slice(0,30)
-        par.textContent = el.description.slice(0,50)
+        title.textContent = el.title.slice(0, 30)
+        par.textContent = el.description.slice(0, 50)
         Dbtn.textContent = 'Delete';
         Edit.textContent = 'Edit'
         blogCard.append(img, id, title, par, Edit, Dbtn)
@@ -34,13 +34,14 @@ async function blogFun() {
 
 blogFun()
 crud__form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const inputFile = document.querySelector('.inputFile').files[0]
     const inputTitle = document.querySelector('.inputTitle').value
     const inputText = document.querySelector('.unputText').value
     const heddinId = document.querySelector('.idheddin').value;
     if (heddinId) {
         idetFun(inputTitle, inputText, heddinId)
+        crud__form.reset()
 
     } else {
         const obj = {
@@ -57,7 +58,7 @@ crud__form.addEventListener('submit', (e) => {
             reader.onload = () => {
                 const avatarUrl = reader.result;
 
-                const blogCard = document.createElement('div')
+                const blogCard = document.createElement('div');
                 const img = document.createElement('img')
                 const title = document.createElement('h5');
                 const id = document.createElement('h1')
@@ -68,8 +69,8 @@ crud__form.addEventListener('submit', (e) => {
                 blogCard.setAttribute('data-id', `${data.id}`)
 
                 title.classList.add('w-50')
-                Dbtn.className = 'delete';
-                Edit.className = 'edit'
+                Dbtn.className = 'delete  d-block  text-white border-0 bg-danger';
+                Edit.className = 'edit d-block text-white border-0 bg-primary mb-1'
                 img.src = avatarUrl
                 id.textContent = data.id
                 title.textContent = data.title
@@ -79,8 +80,11 @@ crud__form.addEventListener('submit', (e) => {
                 blogCard.append(img, id, title, par, Dbtn, Edit)
                 post.appendChild(blogCard)
 
+                crud__form.reset()
             }
+
         })
+   
     }
 
 })
@@ -117,12 +121,19 @@ async function idetFun(inputTitle, inputText, heddinId) {
             method: 'PUT',
             body: dataF
         })
-        const data = reespose.json()
-        if (document.querySelector('h1').textContent === heddinId.toString()) {
-            document.querySelector('h5').textContent = inputTitle;
-            document.querySelector('p').textContent = inputText;
+        const data = reespose.json();
+
+        const allposts = document.querySelectorAll(".cartt");
+        for (const allpost of allposts) {
+
+            if (allpost.querySelector("h1").textContent === heddinId.toString()) {
+                allpost.querySelector("h5").textContent = inputTitle;
+                allpost.querySelector("p").textContent = inputText;
+
+            }
         }
-       console.log(data);
+
+        return data;
     } catch (error) {
         console.error(error);
     }
@@ -140,5 +151,6 @@ async function fun(id) {
         console.error(error);
     }
 
-
+   
 }
+

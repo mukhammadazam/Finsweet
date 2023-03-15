@@ -94,8 +94,6 @@ function valdeshin() {
         alert('blog pechga utishni hohlayasizmi')
     }
     else {
-        conPassword.classList.add('gd')
-        conPassword.classList.add('grean');
         confirm('passwordda xato bor parol 8 tadan kam bulsa blog pegga utolmaysiz  ')
     }
     firstName.value = '';
