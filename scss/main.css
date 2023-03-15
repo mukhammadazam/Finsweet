@@ -679,4 +679,14 @@ input {
   font-size: 24px;
   line-height: 32px;
   color: #232536;
+}
+
+.cartt {
+  max-width: 300px;
+  width: 100%;
+}
+.cartt img {
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

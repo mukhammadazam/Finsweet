@@ -17,14 +17,14 @@ async function blogFun() {
         const par = document.createElement('p')
 
         blogCard.setAttribute('data-id', `${el.id}`)
-        blogCard.classList.add('col-lg-4', 'cartt')
+        blogCard.classList.add('col-12','col-sm-2','col-lg-3', 'cartt','card','m-5')
         title.classList.add('w-50')
-        Dbtn.className = 'delete';
+        Dbtn.className = 'delete border-0 bg-danger';
         Edit.className = 'edit'
         img.src = el.image
         id.textContent = el.id
-        title.textContent = el.title
-        par.textContent = el.description
+        title.textContent = el.title.slice(0,30)
+        par.textContent = el.description.slice(0,50)
         Dbtn.textContent = 'Delete';
         Edit.textContent = 'Edit'
         blogCard.append(img, id, title, par, Edit, Dbtn)
