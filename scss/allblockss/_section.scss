@@ -1,7 +1,7 @@
 .hero-site {
   padding-top: 128px;
   padding-bottom: 196px;
-  @include BG(url(../../imgrs/hero__beground.png), no-repeat, cover, center);
+  @include BG(url(./imgrs/hero__beground.png), no-repeat, cover, center);
 }
 .hero {
   &__leni {
